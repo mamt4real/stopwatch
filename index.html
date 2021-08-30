@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stop Watch</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="main">
+        <div id="clock">
+            <div id="minutes" class="digits">00</div>
+            <div id="seconds" class="digits">00</div>
+            <div id="cent-secs" class="digits">00</div>
+        </div>
+        <div id="controls">
+            <button name="start" class="control-btn" id="stp" onclick="start(this)" value="Start">Start</button>
+            <button name="lap" class="control-btn" id="lap" onclick="lap()" value="Lap">Lap</button>
+            <button name="start" class="control-btn" id="reset" onclick="reset()" value="Reset">Reset</button>
+        </div>
+        <div id="laps-sec">
+            <span class="lap-header">S/N</span><span class="lap-header">Time Stamp</span><span class="lap-header">Duration</span>
+            <ol id="laps">
+
+            </ol>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
